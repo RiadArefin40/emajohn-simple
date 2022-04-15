@@ -11,11 +11,12 @@ const Login = () => {
     const [
         signInWithEmailAndPassword,
         user,
-        loading,
-        error,
+        
+        error
       ] = useSignInWithEmailAndPassword(auth);
 
     const navigate = useNavigate();
+    
     const location = useLocation()
     const from = location.state?.from?.pathname || '/'
 
